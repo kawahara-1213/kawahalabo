@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <meta name="description" content="ポートフォリオ">
+        <meta name="keywords" content="html5,css3,javascript,ポートフォリオ">
+        <title>KawahaLabo</title>
+        <link rel="stylesheet" href="./css/works-blog-style.css">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&family=Open+Sans&display=swap" rel="stylesheet">
+    </head>
+<!-- -->
+<body>
+    <header>
+        <div class="header-left">
+            <a href="index.html">
+                <span class="header-left-top">KawahaLabo&nbsp;+</span>
+                <span class="header-left-bottom">Design by Mako Kawahara</span>
+            </a>
+        </div>
+        <div class="header-right">
+                <label for="btn">
+                    <div class="menu-trigger" id="menu-trigger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </label>
+                <input type="button" id="btn" value='click me' name="btn">
+            <div id="modal" class="modal">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <nav>
+                            <p><i class="fas fa-caret-down"></i>MENU</p>
+                            <ul>
+                                <li>
+                                    <a href="#works" class="btn" id="close-modal"><span>Works</span></a>
+                                </li>
+                                <li>
+                                    <a href="#blog" class="btn" id="close-modal"><span>Blog</span></a>
+                                </li>
+                                <li>
+                                    <a href="#profile" class="btn" id="close-modal"><span>About</span></a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <!-- <input type="button"id="closeBtn" value="close"> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <article>
+        <div class="container">
+            <h1>Works</h1>
+            <div class="flex">
+                <div class="works-image">
+                    <figure class="non-effect">
+                        <a href="../nanashi/index.html">
+                            <img src="image/works-image/nanashi.com.png" alt=”nanashi-image"/>
+                        </a>
+                        <p>
+                            職業訓練校にて、架空の会社のサンプルページを制作しました。<br>
+                            初めての本格的なサイト制作です。
+                        </p>
+                    </figure>
+                </div>
+                <div class="works-image">
+                    <figure class="hover-effect">
+                        <img src="image/works-image/cafe.jpg" alt="cafe-image"/>
+                        <figcaption>
+                            <h3>Comming <br>Soon...</h3>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="footer-contents">
+                <h2>Kawaharabo + <a href="https://twitter.com/barrron0926"><i class="fab fa-twitter-square"></i></a></h2>
+                <p><a href="index.html">index</a> / <a href="works.html">works</a> / <a href="#"><del>blog</del></a></p>
+            </div>
+        </footer>
+        <script src="js/index-script.js"></script>
+    </article>
+</body>

@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="ja">
+	 <head> 
+	 	 <meta charset="utf-8">
+	 	 <meta name="viewport" content="width=device-width,initial-scale=1.0">
+		 <meta name="description" content="html5とcss3の練習用サイト">
+		 <meta name="keywords" content="html5,css3">
+		 <title>nanashi.com</title>
+		 <link rel="stylesheet" href="./css/stock-item-style.css">
+		 <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+		 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+		 <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP&display=swap" rel="stylesheet">
+	 </head>
+	 <body> 
+<!-- -->
+	 	<header>
+<!-- -->
+		 	<div class="header-left">
+		 		<a href="index.html">
+		 			<img src="img/company-logo.png" alt="company-logo">
+		 		</a>
+		 	</div>
+<!--ハンバーガーメニュー-->
+			<div class="drawer">
+<!-- 開閉判断用のチェックボックス。非表示-->
+				<input type="checkbox" id="drawer-check" class="drawer-hidden">
+<!--ラベルでbarsを表示させ、ここのクリックでメニューバーの開閉判断にリンクさせる-->
+				<label for="drawer-check" class="drawer-open"><span></span></label>
+				<nav class="menu-bar">
+					<ul>
+						<li>
+							<a href="info.html">
+								<i class="fas fa-angle-right"></i>会社案内
+							</a>
+						</li>
+						<li>
+							<a href="product.html">
+								<i class="fas fa-angle-right"></i>製品紹介
+							</a>
+						</li>
+						<li>
+							<a href="stock-item.html">
+								<i class="fas fa-angle-right"></i>在庫表
+							</a>
+						</li>
+						<li>
+							<a href="contact.html">
+								<i class="fas fa-angle-right"></i>お問い合わせ
+							</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+
+
+ 			<div class="header-right">
+				<input type="text" name="find" value="検索">
+				<a href="#"><i class="fas fa-search"></i></a>
+<!-- -->
+				<select name="language">
+					<option value="language">language</option>
+					<option value="ja">日本</option>
+					<option value="eng">English</option>
+					<option value="chi">中文</option>
+				</select>
+<!-- -->
+				<nav>
+					<ul>
+						<li>
+							<a href="info.html">
+								<i class="fas fa-angle-right"></i>会社案内
+							</a>
+						</li>
+						<li>
+							<a href="product.html">
+								<i class="fas fa-angle-right"></i>製品紹介
+							</a>
+						</li>
+						<li>
+							<a href="stock-item.html">
+								<i class="fas fa-angle-right"></i>在庫
+							</a>
+						</li>
+						<li>
+							<a href="contact.html">
+								<i class="fas fa-angle-right"></i>お問い合わせ
+							</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+<!-- ここから内容を記述 -->
+
+		<div class="title">
+			<h1>在庫品紹介</h1>
+		</div>
+
+		<main>
+			<div class="container">
+				<div class="contents">
+					<h2>AAシリーズ</h2>
+					<div class="contents-item">
+						<img src="./img/end-mill.jpg" alt="AA-series">
+						<div class="explanation">
+							<p>
+								アルミ合金・ガラス・樹脂などの溶着を極限まで抑えた、ガイドホールの削孔など粗削り用工具素材に特化したシリーズです。
+								1本のドリルで訳100万mの研削を実現しました。(ツールエンジニアリング協会によるテスト済)
+							</p>
+							<p class="length">
+								直径: φ3mm～40mm / 0.1mm刻みでオーダー可
+								<br>
+								(公差: ±0.1mm)
+								<br>
+								全長: 30mm～360mm / 0.1mm刻みでオーダー可
+								<br>
+								(公差: ±0.2mm)
+							</p>
+							<a href="" class="underline">
+								<i class="fas fa-angle-double-right"></i>
+								詳細はこちら
+							</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="contents">
+					<h2>BBシリーズ</h2>
+					<div class="contents-item">
+						<img src="./img/tap.jpg" alt="BB-series">
+						<div class="explanation">
+							<p>
+								鋳鉄や焼入れ鋼、ステンレス鋼など、幅広い用途の高精度削孔にお使いいただけます。大量生産化技術を駆使し、低価格化に努めております。
+							</p>
+							<p class="length">
+								直径: φ2mm～40mm / 0.1mm刻みでオーダー可
+								<br>
+								(公差: ±0.1mm)
+								<br>
+								全長: 30mm～360mm / 0.1mm刻みでオーダー可
+								<br>
+								(公差: ±0.2mm)
+							</p>
+							<a href="" class="underline">
+								<i class="fas fa-angle-double-right"></i>
+								詳細はこちら
+							</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="contents">
+					<h2>CCシリーズ</h2>
+					<div class="contents-item">
+						<img src="./img/d-bit.jpg" alt="CC-series">
+						<div class="explanation">
+							<p>
+								工具剛性を極限まで引き上げ、溶着を防ぐ特殊耐熱材料を混ぜることにより、チタン合金からニッケル・クロム・インコネル・ワスパロイ、ルネ材などの超高硬度の被削材の削孔を可能にしたシリーズです。
+								超硬度の被削材にお困りでしたら、ぜひ一度本素材をご用命ください。
+							</p>
+							<p class="length">
+								直径: φ3mm～40mm / 0.1mm刻みでオーダー可
+								<br>
+								(公差: ±0.1mm)
+								<br>
+								全長: 30mm～360mm / 0.1mm刻みでオーダー可
+								<br>
+								(公差: ±0.2mm)
+							</p>
+							<a href="" class="underline">
+								<i class="fas fa-angle-double-right"></i>
+								詳細はこちら
+							</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="contents">
+					<h2>DDシリーズ</h2>
+					<div class="contents-item">
+						<img src="./img/r-endmill.jpg" alt="DD-series">
+						<div class="explanation">
+							<p>
+								粒子のサイズを0.01μmにする超微粒子化技術により、超高精度の削孔を可能にした弊社の新シリーズをラインナップ。
+								基板などの微細穴や高精度の削孔などにご使用いただけます。
+							</p>
+							<p class="length">
+								直径: φ1mm～40mm / 0.1mm刻みでオーダー可
+								<br>
+								(公差: ±1μm)
+								<br>
+								全長: 20mm～360mm / 0.1mm刻みでオーダー可
+								<br>
+								(公差: ±0.1mm)
+							</p>
+							<a href="" class="underline">
+								<i class="fas fa-angle-double-right"></i>
+								詳細はこちら
+							</a>
+						</div>
+					</div>
+				</div>
+				<p class="sub-message">
+					その他、オーダーメイドにて130種類あまりの素材を<br>
+					被削材、切削環境に合わせて選定いたします。
+				</p>
+				<div class="contact">
+					<p>工具制作に関するご相談はこちら</p>
+					<a href="contact.html">お問い合わせ <i class="fas fa-envelope"></i></a>
+					<p>お気軽にお問い合わせください。</p>
+
+				</div>
+			</div>
+		</main>
+
+		<footer>
+			<div class="footer-contents">
+				<h3>
+					<i class="fas fa-angle-right"></i>ADDRESS
+				</h3>
+				<dl>
+					<dt>本社工場:</dt>
+					<dd>
+						〒000-0000<br>
+						大阪府〇〇市〇〇区〇〇〇-XX-XXX
+					</dd>
+					<dt>仙台工場:</dt>
+					<dd>
+						〒000-0000
+						宮城県仙台市〇〇区〇〇町xx-xxx-x
+					</dd>
+				</dl>
+			</div>
+<!-- -->
+			<div class="footer-contents">
+				<h3>
+					<i class="fas fa-angle-right"></i>CONTACT
+				</h3>
+				<dl>
+					<dt>
+						<i class="fas fa-phone"></i>本社
+					</dt>
+					<dd>000-000-0000</dd>
+					<dt>
+						<i class="fas fa-phone"></i> 
+						営業直通
+					</dt>
+					<dd>000-000-0000</dd>
+					<dt>
+						<i class="far fa-envelope"></i>本社
+					</dt>
+					<dd>nanashi@nanashi.co.jp</dd>
+					<dt>
+						<i class="far fa-envelope"></i>
+						営業直通
+					</dt>
+					<dd>nanashi-eg@nanashi.co.jp</dd>
+				</dl>
+			</div>
+<!-- -->
+			<div class="footer-contents">
+				<h3>
+					<i class="fas fa-angle-right"></i>LINKS
+				</h3>
+				<a href=""><i class="fas fa-link"></i>ななし株式会社</a>
+				<a href=""><i class="fas fa-link"></i>名称不明株式会社.Co.,Ltd.</a>
+				<a href=""><i class="fas fa-link"></i>SubCompany.Co.Ltd.,</a>
+				<a href=""><i class="fas fa-link"></i>linked-company.Co.,Ltd.</a>
+				<a href=""><i class="fas fa-link"></i>Subsidiary.Co.,Ltd.</a>
+			</div>
+		</footer>
+		<div class="copy-light">
+			<p>
+				<small>&copy;nanashi.Co.,Ltd. All Rights Reserved.</small>
+			</p>
+		</div>
+	 </body>
+</html>

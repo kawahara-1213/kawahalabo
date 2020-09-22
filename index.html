@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <meta name="description" content="ポートフォリオ">
+        <meta name="keywords" content="html5,css3,ポートフォリオ">
+        <title>KawahaLabo</title>
+        <link rel="stylesheet" href="./css/index-style.css">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&family=Open+Sans&display=swap" rel="stylesheet">
+    </head>
+<!-- -->
+    <body>
+        <header>
+            <div class="header-left">
+                <a href="index.html">
+                    <span class="header-left-top">KawahaLabo&nbsp;+</span>
+                    <span class="header-left-bottom">Design by Mako Kawahara</span>
+                </a>
+            </div>
+            <div class="header-right">
+                    <label for="btn">
+                        <div class="menu-trigger" id="menu-trigger">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </label>
+                    <input type="button" id="btn" value='click me' name="btn">
+                <div id="modal" class="modal">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <nav>
+                                <p><i class="fas fa-caret-down"></i>MENU</p>
+                                <ul>
+                                    <li>
+                                        <a href="works.html" class="btn" id="close-modal"><span>Works</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="#blog" class="btn" id="close-modal"><span>Blog</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="#profile" class="btn" id="close-modal"><span>About</span></a>
+                                    </li>
+                                </ul>
+                            </nav>
+                            <!-- <input type="button"id="closeBtn" value="close"> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+<!--  -->
+        <main>
+            <div id="top-page">
+                <div class="top-page-contents">
+                    <h1>KawahaLabo&nbsp;+</h1>
+                    <p> Portfolio&nbsp;Website</p>
+                    <ul>
+                        <li>
+                            HTML5&nbsp;/&nbsp;CSS3<i class="fas fa-book-open"></i>
+
+
+                        </li>
+                        <li>
+                            JavaScript&nbsp;/&nbsp;JQuery<i class="fas fa-book-open blinking"></i>
+                        </li>
+                        <li>
+                            WordPress<i class="fas fa-book"></i>
+
+
+                        </li>
+                        <li>
+                            PHP<i class="fas fa-book"></i>
+                        </li>
+                        <li>
+                            Access&nbsp;/&nbsp;データベース<i class="fas fa-book"></i>
+                        </li>
+                        <li>
+                            Java<i class="fas fa-book"></i>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            </div>
+            <div id="works">
+                <div class="works-container" id="works-trigger">
+                    <h2>WORKS</h2>
+                    <p>*制作物一覧*</p>
+                    <div class="flex">
+                        <div class="works-image">
+                            <figure class="non-effect">
+                                <a href="nanashi/index.html">
+                                    <img src="image/works-image/nanashi.com.png" alt="cafe-image"/>
+                                </a>
+                            </figure>
+                        </div>
+
+                            <div class="works-image">
+                                <figure class="hover-effect">
+                                    <img src="image/works-image/cafe.jpg" alt="cafe-image"/>
+                                    <figcaption>
+                                        <h3>Comming <br>Soon...</h3>
+                                    </figcaption>
+                                </figure>
+                            </div>
+
+                            <div class="works-image">
+                                <figure class="hover-effect">
+                                    <img src="image/works-image/hotel.jpg" alt="cafe-image"/>
+                                    <figcaption>
+                                        <h3>Comming <br>Soon..</h3>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                        <a href="works.html" class="angle">一覧<i class="fas fa-angle-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div id="blog">
+                <div class="blog-container" id="blog-trigger">
+                    <h2>Blog</h2>
+                    <div class="flex">
+                        <div class="flex-image">
+                            <a href="#">
+                                <img src="image/works-image/blog-sample2.png" alt="blog-image1">
+                            </a>
+                            <p>テスト</p>
+                        </div>
+                        <div class="flex-image">
+                            <a href="#">
+                                <img src="image/works-image/blog-sample.png" alt="sample" class="coming-soon">
+                            </a>
+                            <p>テスト</p>
+                        </div>
+                        <div class="flex-image">
+                            <a href="#">
+                                <img src="image/works-image/blog-sample2.png" alt="sample" class="coming-soon">
+                            </a>
+                            <p>テスト</p>
+                        </div>
+                        <!-- ここにflex-image+ imgを追加 -->
+                        <!-- <a href="https://www.photo-ac.com/profile/634884">RRice</a>さんによる<a href="https://www.photo-ac.com/">写真AC</a>からの写真-->
+                        <!--<a href="https://www.photo-ac.com/profile/3039427">choco❁⃘*.ﾟ</a>さんによる<a href="https://www.photo-ac.com/">写真AC</a>からの写真 -->
+                        <!-- <a href="https://www.photo-ac.com/profile/2203819">coji_coji_ac</a>さんによる<a href="https://www.photo-ac.com/">写真AC</a>からの写真-->
+                    </div>
+                    <a href="#" class="angle">一覧<i class="fas fa-angle-right"></i></a>
+                </div>
+            </div>
+
+            <div id="profile">
+                <div class="profile-contents">
+                    <h2>About</h2>
+                    <p class="date">
+                        1993.12.13〜 <a href="https://twitter.com/barrron0926"><i class="fab fa-twitter-square"></i></a>
+                    </p>
+                    <p>
+                        前職は営業&営業事務&生産管理兼務として、顧客訪問、見積、受注対応、進捗管理、納期管理等、色々と経験させていただきました。<br>
+                        その中で「自動見積もりシステムをもっと使いやすくしたい」と思い、どうにかできないかとプログラミングの道に足を入れ始めました。現在は職業訓練校にて勉強中です。<br>
+                        「オシャレさ」よりも「使いやすさ」を大事にし、お客様の「もっとこうだったらいいのに」という思いを引き出し、より使いやすいシステムへ改修して行きたいです。
+                    </p>
+                    <p>ご連絡は、<span>kawaharam_1213@yahoo.co.jp</span>までお願いします。</p>
+                </div>
+            </div>
+        </main>
+        <script src="./js/index-script.js"></script>
+    </body>
+</html>

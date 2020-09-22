@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="ja">
+	 <head>
+	 	 <meta charset="utf-8">
+	 	 <meta name="viewport" content="width=device-width,initial-scale=1.0">
+		 <meta name="description" content="html5とcss3の練習用サイト">
+		 <meta name="keywords" content="html5,css3">
+		 <title>nanashi.com</title>
+		 <link rel="stylesheet" href="./css/contact-style.css">
+		 <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+		 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+		 <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP&display=swap" rel="stylesheet">
+	 </head>
+	 <body>
+<!-- -->
+	 	<header>
+<!-- -->
+		 	<div class="header-left">
+		 		<a href="index.html">
+		 			<img src="img/company-logo.png" alt="company-logo">
+		 		</a>
+		 	</div>
+<!--ハンバーガーメニュー-->
+			<div class="drawer">
+<!-- 開閉判断用のチェックボックス。非表示-->
+				<input type="checkbox" id="drawer-check" class="drawer-hidden">
+<!--ラベルでbarsを表示させ、ここのクリックでメニューバーの開閉判断にリンクさせる-->
+				<label for="drawer-check" class="drawer-open"><span></span></label>
+				<nav class="menu-bar">
+					<ul>
+						<li>
+							<a href="info.html">
+								<i class="fas fa-angle-right"></i>会社案内
+							</a>
+						</li>
+						<li>
+							<a href="product.html">
+								<i class="fas fa-angle-right"></i>製品紹介
+							</a>
+						</li>
+						<li>
+							<a href="stock-item.html">
+								<i class="fas fa-angle-right"></i>在庫表
+							</a>
+						</li>
+						<li>
+							<a href="contact.html">
+								<i class="fas fa-angle-right"></i>お問い合わせ
+							</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+
+
+ 			<div class="header-right">
+				<input type="text" name="find" value="検索">
+				<a href="#"><i class="fas fa-search"></i></a>
+<!-- -->
+				<select name="language">
+					<option value="language">language</option>
+					<option value="ja">日本</option>
+					<option value="eng">English</option>
+					<option value="chi">中文</option>
+				</select>
+<!-- -->
+				<nav>
+					<ul>
+						<li>
+							<a href="info.html">
+								<i class="fas fa-angle-right"></i>会社案内
+							</a>
+						</li>
+						<li>
+							<a href="product.html">
+								<i class="fas fa-angle-right"></i>製品紹介
+							</a>
+						</li>
+						<li>
+							<a href="stock-item.html">
+								<i class="fas fa-angle-right"></i>在庫
+							</a>
+						</li>
+						<li>
+							<a href="contact.html">
+								<i class="fas fa-angle-right"></i>お問い合わせ
+							</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+
+<!-- ここから内容を記述 -->
+
+		<div class="title">
+			<h1>CONTACT</h1>
+		</div>
+
+
+		<main>
+			<div class="container">
+
+				<section class="link">
+					<a href="#">採用について</a>
+					<a href="#">お見積もりのご依頼</a>
+				</section>
+
+				<section class="phone">
+					<h2>
+						<i class="fas fa-phone"></i> お電話でのご相談はこちら
+					</h2>
+					<p>
+						総合: 000-000-0000 / 営業直通: 000-000-0000
+					</p>
+					<p>
+						<small>※受付時間: AM9:00 ~ PM18:00</small>
+					</p>
+				</section>
+
+				<form action="" method="post" >
+					<h2>
+						<i class="far fa-envelope"></i>メールでのご相談はこちら
+					</h2>
+					<p class="important">※<span>*</span>= 必須項目</p>
+					<div>
+						<p>会社名・企業名<span>*</span></p>
+						<input type="text" name="company-name" placeholder="company">
+					</div>
+					<div>
+						<p>お名前<span>*</span></p>
+						<input type="text" name="name" placeholder="name">
+					</div>
+					<div>
+						<p>メールアドレス<span>*</span></p>
+						<input type="email" name="email" placeholder="mail">
+					</div>
+					<div>
+						<p>電話番号<span>*</span></p>
+						<input type="phone" name="tel" placeholder="phone">
+					</div>
+					<div class="checkbox">
+						<div class="ask"><p>お問い合わせ項目</p></div>
+
+						<table>
+								<tr>
+									<td>
+										<input type="checkbox" name="check" value="our-product" id="our-product">
+									</td>
+									<td>
+										<label for="our-product">弊社素材に関して</label>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<input type="checkbox" name="check" value="cutting-tool-producting" id="cutting-tool-producting">
+									</td>
+									<td><label for="cutting-tool-producting">工具制作のご相談</label>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<input type="checkbox" name="check" value="our-company" id="our-company">
+									</td>
+									<td>
+										<label for="our-company">ななし株式会社について</label>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<input type="checkbox" name="check" value="material-procurement" id="material-procurement">
+									</td>
+									<td>
+										<label for="material-procurement">その他</label>
+									</td>
+								</tr>
+						</table>
+					</div>
+					<div>
+						<div class="textarea">
+							<p>お問い合わせ内容<span>*</span></p>
+						</div>
+						<textarea name="content" rows="5"></textarea>
+					</div>
+					<button type="submit">確認画面へ</button>
+				</form>
+			</div>
+		</main>
+
+		<footer>
+			<div class="footer-contents">
+				<h3>
+					<i class="fas fa-angle-right"></i>ADDRESS
+				</h3>
+				<dl>
+					<dt>本社工場:</dt>
+					<dd>
+						〒000-0000<br>
+						大阪府〇〇市〇〇区〇〇〇-XX-XXX
+					</dd>
+					<dt>仙台工場:</dt>
+					<dd>
+						〒000-0000
+						宮城県仙台市〇〇区〇〇町xx-xxx-x
+					</dd>
+				</dl>
+			</div>
+<!-- -->
+			<div class="footer-contents">
+				<h3>
+					<i class="fas fa-angle-right"></i>CONTACT
+				</h3>
+				<dl>
+					<dt>
+						<i class="fas fa-phone"></i>本社
+					</dt>
+					<dd>000-000-0000</dd>
+					<dt>
+						<i class="fas fa-phone"></i>
+						営業直通
+					</dt>
+					<dd>000-000-0000</dd>
+					<dt>
+						<i class="far fa-envelope"></i>本社
+					</dt>
+					<dd>nanashi@nanashi.co.jp</dd>
+					<dt>
+						<i class="far fa-envelope"></i>
+						営業直通
+					</dt>
+					<dd>nanashi-eg@nanashi.co.jp</dd>
+				</dl>
+			</div>
+<!-- -->
+			<div class="footer-contents">
+				<h3>
+					<i class="fas fa-angle-right"></i>LINKS
+				</h3>
+				<a href=""><i class="fas fa-link"></i>ななし株式会社</a>
+				<a href=""><i class="fas fa-link"></i>名称不明株式会社.Co.,Ltd.</a>
+				<a href=""><i class="fas fa-link"></i>SubCompany.Co.Ltd.,</a>
+				<a href=""><i class="fas fa-link"></i>linked-company.Co.,Ltd.</a>
+				<a href=""><i class="fas fa-link"></i>Subsidiary.Co.,Ltd.</a>
+			</div>
+		</footer>
+		<div class="copy-light">
+			<p>
+				<small>&copy;nanashi.Co.,Ltd. All Rights Reserved.</small>
+			</p>
+		</div>
+	 </body>
+</html>
